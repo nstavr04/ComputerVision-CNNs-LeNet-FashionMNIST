@@ -1,0 +1,28 @@
+LeNet-5 v5 | relu | adaptive learning rate | 4 batch normalization layers | dropout layers
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 6, 24, 24]             156
+       BatchNorm2d-2            [-1, 6, 24, 24]              12
+              ReLU-3            [-1, 6, 24, 24]               0
+         AvgPool2d-4            [-1, 6, 12, 12]               0
+            Conv2d-5             [-1, 16, 8, 8]           2,416
+       BatchNorm2d-6             [-1, 16, 8, 8]              32
+              ReLU-7             [-1, 16, 8, 8]               0
+         AvgPool2d-8             [-1, 16, 4, 4]               0
+           Flatten-9                  [-1, 256]               0
+           Linear-10                  [-1, 120]          30,840
+      BatchNorm1d-11                  [-1, 120]             240
+             ReLU-12                  [-1, 120]               0
+          Dropout-13                  [-1, 120]               0
+           Linear-14                   [-1, 84]          10,164
+      BatchNorm1d-15                   [-1, 84]             168
+             ReLU-16                   [-1, 84]               0
+          Dropout-17                   [-1, 84]               0
+           Linear-18                   [-1, 10]             850
+================================================================
+Total params: 44,878
+Trainable params: 44,878
+Non-trainable params: 0
+----------------------------------------------------------------
