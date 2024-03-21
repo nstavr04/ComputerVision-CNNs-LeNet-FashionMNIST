@@ -1,4 +1,4 @@
-LeNet-5 v5 | relu | adaptive learning rate | 4 batch normalization layers | dropout layers
+LeNet-5 v5 | relu | adaptive learning rate | 4 batch normalization layers | use of weight decay 1e-4
 
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
@@ -15,12 +15,10 @@ LeNet-5 v5 | relu | adaptive learning rate | 4 batch normalization layers | drop
            Linear-10                  [-1, 120]          30,840
       BatchNorm1d-11                  [-1, 120]             240
              ReLU-12                  [-1, 120]               0
-          Dropout-13                  [-1, 120]               0
-           Linear-14                   [-1, 84]          10,164
-      BatchNorm1d-15                   [-1, 84]             168
-             ReLU-16                   [-1, 84]               0
-          Dropout-17                   [-1, 84]               0
-           Linear-18                   [-1, 10]             850
+           Linear-13                   [-1, 84]          10,164
+      BatchNorm1d-14                   [-1, 84]             168
+             ReLU-15                   [-1, 84]               0
+           Linear-16                   [-1, 10]             850
 ================================================================
 Total params: 44,878
 Trainable params: 44,878
